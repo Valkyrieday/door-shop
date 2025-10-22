@@ -11,50 +11,51 @@
       <div class="section-top">
         <img src="/img/header/logo.svg" alt="logo" />
         <p>Межкомнатные, входные <br />двери и фурнитура к ним</p>
-        <!-- 1. вынести в отдельный блок -->
-        <img src="/img/header/location.svg" alt="icon-location" />
-        <p>г.Волгоград ул. Каннуникова д 6/1</p>
-        <!-- 1. end -->
-        <!-- 2. вынести в отдельный блок -->
-        <img src="/img/header/call.svg" alt="call" />
-        <p>Звоните прямо сейчас:</p>
-        <h5>+7(844)225-03-00</h5>
-        <!-- 2. end -->
-        <!-- 3. скачать иконки отдельно и покрасить кружки вручную -->
-        <img src="/img/header/star.svg" alt="" />
-        <img src="/img/header/stat.svg" alt="" />
-        <img src="/img/header/cart.svg" alt="" />
-        <!-- 3. end -->
+            <div class="header-adress">
+                <img src="/img/header/location.svg" alt="icon-location" />
+                <p>г.Волгоград </p>
+                <p>ул. Каннуникова д 6/1</p>
+            </div>
+            <div class="header-call">
+                <img src="/img/header/call.svg" alt="call" />
+                <p>Звоните прямо сейчас:</p>
+                <h5>+7(844)225-03-00</h5>
+            </div>
+        <div class="header-btn btn-ranking">
+            <img src="/img/header/icon header/ranking.svg" />
+            <div class="header-btn-count">1</div>
+        </div>        
+        <div class="header-btn btn-chart">
+            <img src="/img/header/icon header/chart.svg" />
+            <div class="header-btn-count">1</div>
+        </div>
+        <div class="header-btn btn-cart">
+            <img src="/img/header/icon header/cart.svg" />
+            <div class="header-btn-count">1</div>
+        </div>
       </div>
       <div class="section-bottom">
-        <!-- 4. заменить <ul> на <nav>, а <li> на <a> -->
-        <ul class="nav-list">
-          <li>Входные двери</li>
-          <li>Межкомнатные двери</li>
-          <li>Фурнитура</li>
-          <li>Оплата</li>
-          <li>Доставка и гарантия</li>
-          <li>О магазине</li>
-        </ul>
-        <!-- 4. end -->
-        <!-- 5. заменить форму на див, а кнопку на иконку -->
-        <form action="/search" method="get">
+        <nav class="header-nav-links">
+            <a href=""> Входные двери </a>
+            <a href=""> Межкомнатные двери </a>
+            <a href=""> Фурнитура </a>
+            <a href=""> Оплата </a>
+            <a href=""> Доставка и гарантия </a>
+            <a href=""> О магазине </a>
+        </nav>
+        <div class="search">
           <input type="text" name="q" placeholder="Поиск..." />
-          <button type="submit">Найти</button>
-        </form>
-        <!-- 5. end -->
+          <img src="/img/header/icon header/search.svg" alt="">
+        </div>
       </div>
     </header>
     <main>
-      <!-- 6. присвоить всем картинкам классы -->
       <section class="promo-slider">
-        <img src="/img/main/Frame 387.png" alt="" />
-        <img src="/img/main/left bottom.svg" alt="" />
-        <img src="/img/main/right bottom.svg" alt="" />
+        <img src="/img/main/Frame 387.png" class="img-slide" />
+        <img src="/img/main/left bottom.svg" class="left-btm" />
+        <img src="/img/main/right bottom.svg" class="right-btm" />
       </section>
-      <!-- 6. end -->
-      <!-- 7. заменить класс на более логичный, типа catalog-door-types -->
-      <section class="catalog-head">
+      <section class="catalog-door-types">
         <img src="/img/main/Rectangle 561.png" class="catalog-img" />
         <img src="/img/main/Rectangle 561-1.png" class="catalog-img" />
         <img src="/img/main/Rectangle 561-2.png" class="catalog-img" />
@@ -64,16 +65,15 @@
         <p class="catalog-name">Межкомнатные <br />раздвижные двери</p>
         <p class="catalog-name">Стеклянные двери</p>
       </section>
-      <!-- 7. end -->
       <!-- 8. class="catalog-interior-doors" -->
-      <section class="catalog-door-one">
+      <section class="catalog-interior-doors">
         <div class="catalog-door-head">
           <h2>Межкомнатные двери</h2>
-          <ul class="nav-link">
-            <li>Популярные товары</li>
-            <li>Новые поступления</li>
-            <li>Товары по акции</li>
-          </ul>
+          <nav class="nav-links">
+            <a href="">Популярные товары</a>
+            <a href="">Новые поступления</a>
+            <a href="">Товары по акции</a>
+          </nav>
         </div>
         <div class="door-cards">
           <div class="door-card">
@@ -122,26 +122,22 @@
           </div>
         </div>
         <div class="nav-price">
-          <ul>
-            <li>до 10 000 ₽</li>
-            <li>от 10 000 до 20 000 ₽</li>
-            <li>от 20 000 ₽</li>
-            <li>Перейти в каталог</li>
-          </ul>
+          <nav>
+            <p>до 10 000 ₽</p>
+            <p>от 10 000 до 20 000 ₽</p>
+            <p>от 20 000 ₽</p>
+            <p>Перейти в каталог</p>
+          </nav>
         </div>
       </section>
-      <!-- 8.end -->
-      <!-- 9. class="catalog-entrance-doors" -->
-      <section class="catalog-door-two">
+      <section class="catalog-entrance-doors">
         <div class="catalog-door-head">
           <h2>Входные двери</h2>
-          <!-- 10. избавиться от ul и li, заюзать ссылки <a> -->
-          <ul class="nav-link">
-            <li>Популярные товары</li>
-            <li>Новые поступления</li>
-            <li>Товары по акции</li>
-          </ul>
-          <!-- 10. end -->
+          <nav class="nav-links">
+            <a href="">Популярные товары</a>
+            <a href="">Новые поступления</a>
+            <a href="">Товары по акции</a>
+          </nav>
         </div>
         <div class="door-cards">
           <div class="door-card">
