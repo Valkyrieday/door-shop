@@ -13,26 +13,32 @@
         <p>Межкомнатные, входные <br />двери и фурнитура к ним</p>
             <div class="header-adress">
                 <img src="/img/header/location.svg" alt="icon-location" />
-                <p>г.Волгоград </p>
-                <p>ул. Каннуникова д 6/1</p>
+                <div class="adress-text">
+                  <p id="orange-text">г. Волгоград</p>
+                  <p>ул. Каннуникова д 6/1</p>
+                </div>
             </div>
             <div class="header-call">
                 <img src="/img/header/call.svg" alt="call" />
-                <p>Звоните прямо сейчас:</p>
-                <h5>+7(844)225-03-00</h5>
+                <div class="call-text">
+                  <p>Звоните прямо сейчас:</p>
+                  <h3>+7 (844) 225-03-00</h3>
+                </div>
             </div>
-        <div class="header-btn btn-ranking">
-            <img src="/img/header/icon header/ranking.svg" />
-            <div class="header-btn-count">1</div>
-        </div>        
-        <div class="header-btn btn-chart">
-            <img src="/img/header/icon header/chart.svg" />
-            <div class="header-btn-count">1</div>
-        </div>
-        <div class="header-btn btn-cart">
-            <img src="/img/header/icon header/cart.svg" />
-            <div class="header-btn-count">1</div>
-        </div>
+        <div class="container-header-btn">
+          <div class="header-btn btn-ranking">
+              <img src="/img/header/icon header/ranking.svg" />
+              <div class="header-btn-count">1</div>
+          </div>        
+          <div class="header-btn btn-chart">
+              <img src="/img/header/icon header/chart.svg" />
+              <div class="header-btn-count">1</div>
+          </div>
+          <div class="header-btn btn-cart">
+              <img src="/img/header/icon header/cart.svg" />
+              <div class="header-btn-count">1</div>
+          </div>
+        </div>    
       </div>
       <div class="section-bottom">
         <nav class="header-nav-links">
@@ -44,16 +50,24 @@
             <a href=""> О магазине </a>
         </nav>
         <div class="search">
-          <input type="text" name="q" placeholder="Поиск..." />
-          <img src="/img/header/icon header/search.svg" alt="">
+          <input type="text" name="q" placeholder="Поиск..." class="search-input" />
+          <img src="/img/header/icon header/search.svg" class="search-icon">
         </div>
       </div>
     </header>
     <main>
       <section class="promo-slider">
-        <img src="/img/main/Frame 387.png" class="img-slide" />
-        <img src="/img/main/left bottom.svg" class="left-btm" />
-        <img src="/img/main/right bottom.svg" class="right-btm" />
+        <button class="btn prev">
+          <img src="/img/main/left bottom.svg" class="left-btm" />
+        </button>
+        <div class="slide-active">
+          <img src="/img/main/Frame 387.png" class="img-slide" />
+        </div>
+        <div class="slide">
+        </div>
+        <button class="btn next">
+          <img src="/img/main/right bottom.svg" class="right-btm" />
+        </button> 
       </section>
       <section class="catalog-door-types">
         <img src="/img/main/Rectangle 561.png" class="catalog-img" />
