@@ -236,9 +236,8 @@ a {
 
 .catalog-door-head {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 400px;
     margin: 20px 0 50px 0;
     padding-top: 10px;
 }
@@ -271,7 +270,8 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 55px;
+    gap: 16px;
+    width: 100%;
 }
 
 .door-card-base {
@@ -288,6 +288,7 @@ a {
 
 .door-card {
     max-width: 282px;
+    width: 100%;
 }
 
 .door-card-solid {
