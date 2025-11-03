@@ -295,6 +295,27 @@ a {
     gap: 10px;
 }
 
+
+.door-card-solid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 8px;
+    width: 376px;
+    height: 542px;
+    overflow: hidden;
+    gap: 10px;
+}
+
+.solid-door-img {
+    max-width: 344px;
+    max-height: 334px;
+    padding-top: 10px;
+}
+
+
 .door-cards p {
     font-family: 'Inter';
     font-style: normal;
@@ -360,19 +381,53 @@ a {
 }
 
 .nav-price {
-    margin: 20px 5px 60px 5px;
+    display: flex;
     width: 829px;
+    margin: 20px 20px 20px 20px;
+    padding-bottom: 0;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    background-color: #E0E0E2;
+    border-radius: 38px;
+    gap: 30px;
 }
 
-.nav-price nav {
+
+.nav-price a {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px 5px 20px 5px;
-    gap: 60px;
-    background-color: #E0E0E2;
+    padding: 20px 10px;
+    border-radius: 38px;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    font-style: normal;
+}
+
+.orange-btm {
+    background-color: #F85B18;
+    width: 204px;
+    height: 40px;
+    color: #F4F4F5;
 }
 
 .interior_door {
     background-color: #F4F4F5;
 }
+
+.catalog-entrance-doors {
+    background-color: #F4F4F5;
+    margin-top: 5px;
+}
+
+.line {
+    justify-content: center;
+    height: 30px;
+    border: 1px solid #BABAC4;
+    transform: rotate(180deg);
+    
+}
+
