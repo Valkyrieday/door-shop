@@ -1,4 +1,4 @@
-@import url(/fonts.css);
+
 
 * {
   padding: 0;
@@ -151,8 +151,6 @@ a {
     background-color: #ffffff;
     border-radius: 5px;
     overflow: hidden;
-    display: flex;
-    justify-content: flex-end;
 }
 
 .search-input {
@@ -217,25 +215,7 @@ a {
     margin-bottom: 30px;
 }
 
-.interior-doors {
-    display: flex;
-    justify-content: center;
-    position: relative;
-}
-
-.solid-doors {
-    display: flex;
-    justify-content: center;
-    position: relative;
-}
-
-.sliding-interior-doors {
-    display: flex;
-    justify-content: center;
-    position: relative;
-}
-
-.glass-doors {
+.interior-doors, .solid-doors, .sliding-interior-doors, .glass-doors {
     display: flex;
     justify-content: center;
     position: relative;
@@ -294,17 +274,24 @@ a {
     gap: 55px;
 }
 
-.door-card {
+.door-card-base {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     background-color: #ffffff;
     border-radius: 8px;
-    max-width: 282px;
-    max-height: 542px;
     overflow: hidden;
     gap: 10px;
+    height: 542px;
+}
+
+.door-card {
+    max-width: 282px;
+}
+
+.door-card-solid {
+    width: 376px;
 }
 
 .title-head-door {
@@ -312,22 +299,6 @@ a {
     font-size: 32px;
     line-height: 100%;
 
-}
-
-
-
-
-.door-card-solid {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: #ffffff;
-    border-radius: 8px;
-    width: 376px;
-    height: 542px;
-    overflow: hidden;
-    gap: 10px;
 }
 
 .solid-door-img {
@@ -343,54 +314,43 @@ a {
     line-height: 20px;
 }
 
-.door-card-sale {
+.door-card-sale-base {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 20px 0 20px 0;
+}
+
+.door-card-sale {
     gap: 140px;
 }
 
 .door-card-sale-solid {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px 0 20px 0;
     gap: 250px;
 }
 
-.door-card-sale h4 {
+.door-card-sale h4, .door-card-sale-solid h4 {
     font-weight: 600;
     font-size: 18px;
     line-height: 18px;
 }
 
-.door-card-sale-solid h4 {
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 18px;
+.colors-door, .colors-door-solid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    gap: 3px;
+    margin-right: 20px;
+    margin-top: 20px;
 }
 
 .colors-door {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 212px;
-    height: 50px;
-    gap: 3px;
-    margin-right: 20px;
-    margin-top: 20px;
 }
 
 .colors-door-solid {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 320px;
-    height: 50px;
-    gap: 3px;
-    margin-right: 20px;
-    margin-top: 20px;
 }
 
 
