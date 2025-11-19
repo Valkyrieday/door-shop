@@ -560,3 +560,11 @@ a {
 .service-info__item p {
   font-size: 14px;
 }
+
+
+.measure-request {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
